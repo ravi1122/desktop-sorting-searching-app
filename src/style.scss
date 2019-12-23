@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.w--50 {
+  width: 50%;
+}
+
+.d--ib {
+  display: inline-block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.main-container {
+  margin: 0 auto;
+
+  &.mobile {
+    width: 96%;
+  }
+
+  &.desktop {
+    width: 96%;
+    min-width: 1080px;
+  }
+}
+
+.search-section {
+  margin: 16px;
+}
+
+.dropdown {
+  margin-left: 65%;
+}
+
+.users-list {
+  width: 95%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+}
+
+.user-card {
+  height: 95%;
+  padding: 0 1%;
+  display: inline-block;
+}
+
+.mobile {
+  .user-card {
+    width: 50%;
+  }
+}
+
+.desktop {
+  .users-list {
+    min-width: 1080px;
+  }
+
+  .user-card {
+    width: 25%;
+  }
+}
+
+.user-avatar,
+.user-info {
+  width: 100%;
+  height: 50%;
+}
+
+.user-avatar {
+  top: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .name {
+    top: -48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 48px;
+    z-index: 1;
+    position: relative;
+    padding-left: 8px;
+    color: #fff;
+
+    &__name {
+      font-weight: bold;
+      font-size: 24px;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__id {
+      font-size: 16px;
+    }
+  }
+}
+
+.user-info {
+  bottom: 0;
+  color: #fff;
+  background-color: #252224;
+
+  &__row {
+    height: 20%;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #ff9;
+    }
+
+    .left {
+      text-transform: uppercase;
+      float: left;
+      width: 35%;
+    }
+
+    .right {
+      float: right;
+      text-align: right;
+      width: 65%;
+      color: #f1b03a;
+    }
+  }
+}
+.firstInner {
+  top: 20px;
+  margin: 20px;
+}
+
+.btn-next {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
